@@ -1,0 +1,10 @@
+/* qui dentro inserisco un po' di stili per personalizzare le mie icone di fontawesome */
+
+i {
+  font-size: 1.5em; /* la ingrandisco del 50% */
+  color: orange;
+}
+
+#middle-icon {
+  color: purple;
+}
