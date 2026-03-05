@@ -1,0 +1,100 @@
+/* RIPRISTINO STILI DI BASE */
+/* cerchiamo di ri-applicare sulla pagina le regole stilistiche a cui siamo più abituati */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  /* margin-top: 0.5em;
+  margin-bottom: 0.5em; */
+  /* scorciatoia */
+  margin: 0.5em 0;
+
+  /* margin: 1em <-- applica 1em a TUTTI i lati (margin-top, margin-bottom, margin-left, margin-right) */
+  /* margin: 1em 0 <-- applica 1em top+bottom, 0 left+right*/
+  /* margin: 1em 0.5em 0 <-- applica 1em top+bottom, 0 left+right*/
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin: 0.25em 0;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+/* FINE RIPRISTINO STILI DI BASE */
+
+/* REGOLE SPECIFICHE PER QUESTA PAGINA */
+
+header {
+  text-align: center;
+}
+
+main > section > p {
+  color: red;
+}
+
+#box {
+  background-color: orange;
+  width: 300px;
+  border: 1px solid red;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+  margin-left: 20px;
+}
+
+#box2 {
+  width: 300px;
+  height: 200px;
+
+  padding-left: 50px;
+  border: 5px solid black;
+
+  background-color: grey;
+  color: white;
+  /* lo separo da box1 con un margin-top */
+  margin-top: 2em;
+  /* la dimensione EFFETTIVA del mio box2 è:
+  width: 300 + 50 + 5 + 5 = 360px
+  height: 200 + 5 + 5 = 210px
+  */
+  box-sizing: border-box;
+
+  /* La proprietà "box-sizing" serve a impostare COME verrà calcolato l'ingombro totale di un elemento una volta che raggiunge la pagina.
+  Di DEFAULT ("content-box") l'ingombro effettivo di un elemento è: area del contenuto + padding + border. Questo comporta che anche
+  se l'area del contenuto (impostata con width&height) vale un tot, l'ingombro effettivo nella pagina del mio elemento potrebbe essere
+  maggiore. Se cambiate questo comportamento di default ("border-box") la width&height che definite, cascasse il mondo, saranno le dimensioni
+  REALI occupate dall'elemento nel browser; questo viene comodo quando avete uno spazio definito e volete a tutti i costi fare in modo
+  che il vostro elemento ci entri (a scapito del contenuto, che potrebbe venire rosicchiato). */
+}
+
+#box3 {
+  height: 300px;
+  width: 50%;
+  background-color: cornflowerblue;
+  color: white;
+}

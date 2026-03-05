@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model in CSS</title>
+    <!-- applichiamo come PRIMO FOGLIO DI STILE il nostro reset.css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- ora nei fogli successivi dovremo occuparci di ripristinare gli stili di base che intendiamo
+    applicare, es. h1 un po' più grande, pallini sulle liste etc. etc. -->
+    <link rel="stylesheet" href="./css/box-model.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Come funziona il modello a "scatola" degli elementi HTML</h1>
+    </header>
+    <main>
+      <section>
+        <p>CIAO SONO UN PARAGRAFO</p>
+        <p>CIAO SONO UN PARAGRAFO</p>
+      </section>
+      <section>
+        <ul>
+          <li>Paolo</li>
+          <li>Giulia</li>
+          <li>Giorgio</li>
+        </ul>
+      </section>
+      <section>
+        <ol>
+          <li>Primo</li>
+          <li>Secondo</li>
+          <li>Terzo</li>
+        </ol>
+      </section>
+      <section>
+        <h3>FUNZIONAMENTO DEL BOX MODEL</h3>
+        <div id="box">
+          <span>SONO IL BOX</span>
+        </div>
+        <div id="box2">
+          <span>SONO IL BOX2</span>
+        </div>
+        <div id="box3">
+          <span>SONO IL BOX3</span>
+        </div>
+        <div>
+          <img src="https://placecats.com/500/500" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
